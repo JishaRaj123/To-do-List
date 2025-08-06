@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome - Task Manager</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 500px;
+    /* animation */
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+h1 {
+    color: navy;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: navy;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+a.button:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Task Manager</h1>
+    <a href="todo.html" class="button">Go</a>
+</div>
+</body>
+</html>
